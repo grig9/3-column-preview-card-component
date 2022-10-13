@@ -16,33 +16,34 @@ main {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: hsl(0deg, 0%, 95%);
 }
 
 .preview-card {
   display: flex;
+  width: 870px;
 }
-
-.col {
+.preview-card .col {
   padding: 40px;
-  width: 290px;
+  flex: 1;
 }
-.col img {
+.preview-card .col img {
   width: 64px;
   height: 40px;
 }
-.col h2 {
+.preview-card .col h2 {
   margin-top: 20px;
   font-family: "Big Shoulders Display", cursive;
   color: hsl(0deg, 0%, 95%);
   font-size: 30px;
   text-transform: uppercase;
 }
-.col p {
+.preview-card .col p {
   margin-top: 20px;
   line-height: 26px;
   color: hsla(0deg, 0%, 100%, 0.75);
 }
-.col .btn {
+.preview-card .col .btn {
   display: block;
   width: 140px;
   margin-top: 80px;
@@ -53,7 +54,7 @@ main {
   border: 1px solid hsl(0deg, 0%, 95%);
   border-radius: 30px;
 }
-.col .btn:hover {
+.preview-card .col .btn:hover {
   color: hsl(0deg, 0%, 95%);
 }
 
@@ -96,4 +97,27 @@ main {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    height: 100%;
+  }
+  .preview-card {
+    width: 310px;
+    flex-direction: column;
+    margin: 80px 0;
+  }
+  .preview-card .col .btn {
+    margin-top: 20px;
+  }
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  .attribution {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

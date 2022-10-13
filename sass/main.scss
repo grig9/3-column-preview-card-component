@@ -19,3 +19,44 @@ $font-size: 15px;
   font-size: $font-size;
   font-family: $font-LD;
 }
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-card {
+  display: flex;
+  width: 1200px;
+
+  // border-radius: 20px;
+  z-index: 12;
+  margin: 10px;
+}
+
+.col {
+  padding: 40px;
+
+  .btn {
+    border-radius: 30px;
+    background-color: $very-light-gray;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.sedans {
+  background-color: $bright-orange;
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: $dark-cyan;
+}
+
+.luxury {
+  background-color: $very-dark-cyan;
+  border-radius: 0 10px 10px 0;
+}

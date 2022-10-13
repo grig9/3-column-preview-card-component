@@ -5,4 +5,42 @@
   box-sizing: border-box;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-card {
+  display: flex;
+  width: 1200px;
+  z-index: 12;
+  margin: 10px;
+}
+
+.col {
+  padding: 40px;
+}
+.col .btn {
+  border-radius: 30px;
+  background-color: hsl(0deg, 0%, 95%);
+  text-align: center;
+  padding: 10px;
+}
+
+.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 10px 10px 0;
 }/*# sourceMappingURL=main.css.map */

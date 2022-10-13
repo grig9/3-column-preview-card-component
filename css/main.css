@@ -46,12 +46,12 @@ main {
   display: block;
   width: 140px;
   margin-top: 80px;
-  border-radius: 30px;
+  padding: 10px;
   background-color: hsl(0deg, 0%, 95%);
   text-align: center;
-  padding: 10px;
-  border: 1px solid hsl(0deg, 0%, 95%);
   text-decoration: none;
+  border: 1px solid hsl(0deg, 0%, 95%);
+  border-radius: 30px;
 }
 .col .btn:hover {
   color: hsl(0deg, 0%, 95%);
@@ -61,12 +61,18 @@ main {
   background-color: hsl(31deg, 77%, 52%);
   border-radius: 10px 0 0 10px;
 }
+.sedans .btn {
+  color: hsl(31deg, 77%, 52%);
+}
 .sedans .btn:hover {
   background-color: hsl(31deg, 77%, 52%);
 }
 
 .suvs {
   background-color: hsl(184deg, 100%, 22%);
+}
+.suvs .btn {
+  color: hsl(184deg, 100%, 22%);
 }
 .suvs .btn:hover {
   background-color: hsl(184deg, 100%, 22%);
@@ -75,6 +81,9 @@ main {
 .luxury {
   background-color: hsl(179deg, 100%, 13%);
   border-radius: 0 10px 10px 0;
+}
+.luxury .btn {
+  color: hsl(179deg, 100%, 13%);
 }
 .luxury .btn:hover {
   background-color: hsl(179deg, 100%, 13%);

@@ -62,12 +62,12 @@ main {
     display: block;
     width: 140px;
     margin-top: 80px;
-    border-radius: 30px;
+    padding: 10px;
     background-color: $very-light-gray;
     text-align: center;
-    padding: 10px;
-    border: 1px solid $very-light-gray;
     text-decoration: none;
+    border: 1px solid $very-light-gray;
+    border-radius: 30px;
 
     &:hover {
       color: $very-light-gray;
@@ -81,6 +81,7 @@ main {
   border-radius: 10px 0 0 10px;
 
   .btn {
+    color: $bright-orange;
     &:hover {
       background-color: $bright-orange;
     }
@@ -91,6 +92,7 @@ main {
   background-color: $dark-cyan;
 
   .btn {
+    color: $dark-cyan;
     &:hover {
       background-color: $dark-cyan;
     }
@@ -102,6 +104,7 @@ main {
   border-radius: 0 10px 10px 0;
   
   .btn {
+    color: $very-dark-cyan;
     &:hover {
       background-color: $very-dark-cyan;
     }
@@ -117,6 +120,6 @@ main {
 }
 
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 768px) {
   
 }

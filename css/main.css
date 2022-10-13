@@ -8,15 +8,22 @@
 }
 
 body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(0deg, 0%, 95%);
 }
 
 main {
   display: flex;
-  height: 100vh;
+  height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0deg, 0%, 95%);
+}
+main h1 {
+  font-size: 0.1rem;
+  text-align: center;
 }
 
 .preview-card {
@@ -35,16 +42,18 @@ main {
   margin-top: 20px;
   font-family: "Big Shoulders Display", cursive;
   color: hsl(0deg, 0%, 95%);
-  font-size: 30px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .preview-card .col p {
+  font-size: 1rem;
   margin-top: 20px;
   line-height: 26px;
   color: hsla(0deg, 0%, 100%, 0.75);
 }
 .preview-card .col .btn {
   display: block;
+  font-size: 1rem;
   width: 140px;
   margin-top: 80px;
   padding: 10px;
@@ -91,6 +100,7 @@ main {
 }
 
 .attribution {
+  padding: 20px;
   font-size: 11px;
   text-align: center;
 }
@@ -100,11 +110,14 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  * {
+    font-size: 16px;
+  }
+  body {
     height: 100%;
   }
   .preview-card {
-    width: 310px;
+    width: 95%;
     flex-direction: column;
     margin: 80px 0;
   }

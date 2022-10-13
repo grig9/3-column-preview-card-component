@@ -78,4 +78,13 @@ main {
 }
 .luxury .btn:hover {
   background-color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */

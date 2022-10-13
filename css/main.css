@@ -17,8 +17,6 @@ main {
 .preview-card {
   display: flex;
   width: 1200px;
-  z-index: 12;
-  margin: 10px;
 }
 
 .col {

@@ -7,6 +7,10 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 main {
   display: flex;
   height: 100vh;
@@ -16,29 +20,62 @@ main {
 
 .preview-card {
   display: flex;
-  width: 1200px;
 }
 
 .col {
   padding: 40px;
+  width: 290px;
+}
+.col img {
+  width: 64px;
+  height: 40px;
+}
+.col h2 {
+  margin-top: 20px;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.col p {
+  margin-top: 20px;
+  line-height: 26px;
+  color: hsla(0deg, 0%, 100%, 0.75);
 }
 .col .btn {
+  display: block;
+  width: 140px;
+  margin-top: 80px;
   border-radius: 30px;
   background-color: hsl(0deg, 0%, 95%);
   text-align: center;
   padding: 10px;
+  border: 1px solid hsl(0deg, 0%, 95%);
+  text-decoration: none;
+}
+.col .btn:hover {
+  color: hsl(0deg, 0%, 95%);
 }
 
 .sedans {
   background-color: hsl(31deg, 77%, 52%);
   border-radius: 10px 0 0 10px;
 }
+.sedans .btn:hover {
+  background-color: hsl(31deg, 77%, 52%);
+}
 
 .suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.suvs .btn:hover {
   background-color: hsl(184deg, 100%, 22%);
 }
 
 .luxury {
   background-color: hsl(179deg, 100%, 13%);
   border-radius: 0 10px 10px 0;
+}
+.luxury .btn:hover {
+  background-color: hsl(179deg, 100%, 13%);
 }/*# sourceMappingURL=main.css.map */

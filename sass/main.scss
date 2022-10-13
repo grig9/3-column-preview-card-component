@@ -20,6 +20,10 @@ $font-size: 15px;
   font-family: $font-LD;
 }
 
+body {
+  width: 100%;
+}
+
 main {
   display: flex;
   height: 100vh;
@@ -29,30 +33,77 @@ main {
 
 .preview-card {
   display: flex;
-  width: 1200px;
 }
 
 .col {
   padding: 40px;
+  width: 290px;
+
+  img {
+    width: 64px;
+    height: 40px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-family: $font-BSD;
+    color: $very-light-gray;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 20px;
+    line-height: 26px;
+    color: $transparent-white;
+  }
 
   .btn {
+    display: block;
+    width: 140px;
+    margin-top: 80px;
     border-radius: 30px;
     background-color: $very-light-gray;
     text-align: center;
     padding: 10px;
+    border: 1px solid $very-light-gray;
+    text-decoration: none;
+
+    &:hover {
+      color: $very-light-gray;
+    }
+
   }
 }
 
 .sedans {
   background-color: $bright-orange;
   border-radius: 10px 0 0 10px;
+
+  .btn {
+    &:hover {
+      background-color: $bright-orange;
+    }
+  }
 }
 
 .suvs {
   background-color: $dark-cyan;
+
+  .btn {
+    &:hover {
+      background-color: $dark-cyan;
+    }
+  }
 }
 
 .luxury {
   background-color: $very-dark-cyan;
   border-radius: 0 10px 10px 0;
+  
+  .btn {
+    &:hover {
+      background-color: $very-dark-cyan;
+    }
+  }
 }
